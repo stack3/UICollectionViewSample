@@ -50,8 +50,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellId = @"CellId";
-    STCustomCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+    STCustomCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:@"CellId" forIndexPath:indexPath];
 
     STCollectionItem *item = [_items objectAtIndex:indexPath.row];
     cell.numberLabel.text = [NSString stringWithFormat:@"%d", item.number];
