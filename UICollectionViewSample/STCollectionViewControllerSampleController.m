@@ -36,8 +36,6 @@
     
     UINib *nib = [UINib nibWithNibName:@"STCustomCollectionViewCell" bundle:nil];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"CellId"];
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
 }
 
 #pragma mark - UICollectionViewDataSource
