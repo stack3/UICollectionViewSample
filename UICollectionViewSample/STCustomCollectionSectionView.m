@@ -13,8 +13,4 @@
 // readonly property still need to define synthesize.
 @synthesize titleLabel = _titleLabel;
 
-- (void)awakeFromNib
-{
-}
-
 @end

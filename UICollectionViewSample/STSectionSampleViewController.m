@@ -93,7 +93,7 @@
 {
     NSArray *items = [_sections objectAtIndex:indexPath.section];
     STCollectionItem *item = [items objectAtIndex:indexPath.row];
-    NSString *message = [NSString stringWithFormat:@"%d\n%@", item.number, item.caption];
+    NSString *message = [NSString stringWithFormat:@"section:%d\n%d\n%@", indexPath.section+1, item.number, item.caption];
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
                                                         message:message
